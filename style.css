@@ -1,0 +1,178 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+
+.content{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content nav{
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem;
+  padding-top: 0px;
+  box-shadow: 20px 0px ;
+}
+
+/* CSS TRANSITIONS */
+/* transition: color 1s linear 0.5s;
+OR  INDIVIDUALLY
+transition-property: color;
+transition-duration: 1s;
+transition-timing-function: linear;
+transition-delay: 0.5s; */
+.nav a{
+  text-decoration: none;
+  color: #F76300;
+  border: solid 1px #F76300;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 5px;
+  align-self: center;
+  transition-duration: 0.35s;
+}
+
+/* the correct order is a:link => a:visited => a:hover => a:active */
+.nav a:hover{
+  background-color: #F76300;
+  color: white;
+}
+
+.nav a:active{
+  background-color: #F76300;
+  color: white;
+}
+
+.nav a:focus{
+  background-color: #F76300;
+  color: white;
+}
+.sub-nav a:focus{
+  background-color: #F76300;
+  color: white;
+}
+
+
+.sub-nav{
+  align-self: center;
+}
+
+.landing{
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  background-image: url('images/pexels-cadeau-maestro-1170412.jpg');
+  background-size: 1530px 1032px;
+}
+
+.hire-btn{
+  border-radius: 5px;
+  background-color: #F76300;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.hire-btn:hover{
+  cursor: pointer;
+}
+
+.afterClick{
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: silver;
+  color: black;
+  border: solid 1px #F76300;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 180px;
+  margin: 40px;
+}
+
+.section-heading{
+text-align:center;
+margin-bottom: 10px;
+color: #F76300;
+}
+
+.about p{
+color:#313549;
+}
+
+.stats{
+display: flex;
+justify-content: space-evenly;
+text-align: center;
+margin: 25px;
+font-size: 50px;
+color:#313549;
+}
+
+.stat> span{
+display: block;
+font-size:18px;
+color:#313549;
+}
+
+.skills{
+background-color: #E5E5E5;
+}
+
+.skill{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+padding: 0 0 0 100px;
+}
+
+.skill>div{
+flex: 1 0 40%;
+padding: 35px 0;
+}
+
+.skill>div::before{
+content:'';
+display: inline-block;
+border: 3px solid #F76300;
+width: 10px;
+height: 9px;
+margin: 2px 10px 0 0;
+padding: 1px 0 0 0;
+}
+
+.portfolio-items{
+  display: grid;
+  height: 100%;
+  justify-content: center;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.portfolio-items img{
+  height: 100%;
+  width:100%;
+  border-radius: 10px;
+}
+
+
+
